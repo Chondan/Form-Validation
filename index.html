@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Form Validation</title>
+</head>
+<body>
+    <header>Form Validation</header>
+    <form id="log-in">
+        <label for="email">Email</label>
+        <input type="text" name="email" id="email">
+        <div id="email-validation" class="validation hidden">Email must be valid</div>
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password">
+        <div id="password-validation" class="validation hidden">Password must be valid</div>
+        <input type="submit" value="SUBMIT">
+        <div class="description hidden">
+            The password must contains
+            <ol>
+                <li>At least one digit.</li>
+                <li>At least one lowercase character.</li>
+                <li>At least one uppercase character.</li>
+                <li>At least one special character.</li>
+                <li>At least 8 characters in length, but no more than 32.</li>
+            </ol>
+        </div>
+    </form>
+    <script src="./index.js"></script>
+</body>
+</html>
